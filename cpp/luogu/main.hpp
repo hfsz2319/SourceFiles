@@ -3,5 +3,7 @@
 #include<map>
 #include<string>
 typedef int fmain();
-std::map<std::string,fmain*> menu;
-#endif
+struct smain{
+static std::map<std::string,fmain*> menu;
+smain(std::string name,fmain* prog){menu[name]=prog;}};
+#endif 
