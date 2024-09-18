@@ -13,7 +13,7 @@ int main()
     do{
         clear();
         for(const auto &i:smain::menu)
-            printf("%s\r\n",i.first);
+            printf("%s\r\n",i.first.c_str());
         choose.clear();
         for([&ch](){while(isspace(ch)){ch=getchar();}}();!isspace(ch);ch=getchar())
             choose+=ch;
