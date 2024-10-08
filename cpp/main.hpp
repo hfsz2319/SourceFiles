@@ -5,5 +5,5 @@
 typedef int fmain();
 struct smain{
 static std::map<std::string,fmain*> menu;
-smain(std::string name,fmain* prog){menu[name]=prog;}};
+smain(const std::string &name,fmain* prog){menu[name]=prog;}};
 #endif 
